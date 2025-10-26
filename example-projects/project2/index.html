@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2 - Task Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+        h1 {
+            text-align: center;
+        }
+        .task-form {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background: #fff;
+            color: #f5576c;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Project 2 - Simple Task Manager</h1>
+    <div class="task-form">
+        <h2>Add a Task</h2>
+        <form method="POST" action="save-task.php">
+            <input type="text" name="task" placeholder="Enter a task..." required>
+            <button type="submit">Add Task</button>
+        </form>
+    </div>
+    <p><em>This is a simple example showing form submission with PHP.</em></p>
+</body>
+</html>

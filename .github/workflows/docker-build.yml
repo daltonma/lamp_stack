@@ -6,7 +6,7 @@ on:
       - main
       - master
     paths:
-      - 'Dockerfile'
+      - '.devcontainer/Dockerfile'
       - '.github/workflows/docker-image.yml'
       - '**/Dockerfile'
   workflow_dispatch:
@@ -34,3 +34,4 @@ jobs:
         with:
           push: true
           tags: bohrium2b/lamp_stack:latest
+          file: '.devcontainer/Dockerfile'

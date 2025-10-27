@@ -34,4 +34,4 @@ jobs:
         with:
           push: true
           tags: bohrium2b/lamp_stack:latest
-          context: '.devcontainer/'
+          context: "{{defaultContext}}:.devcontainer"

@@ -3,6 +3,7 @@
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
+	"image": "bohrium2b/lamp_stack:latest",
 	"forwardPorts": [80, 3306],
 	"portsAttributes": {
 		"80": {

@@ -63,7 +63,7 @@ fi
 
 # Start MariaDB in background
 echo "Starting MariaDB..."
-service mysqld start
+service mariadb start
 
 # Ensure proper ownership of workspace files (useful when host mounts are present)
 chown -R www-data:www-data /var/www/html || true

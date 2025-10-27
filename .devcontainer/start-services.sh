@@ -72,4 +72,4 @@ chown -R vscode:www-data /var/www/html || true
 
 # Finally, start Apache in the foreground (PID 1)
 echo "Starting Apache (foreground)..."
-exec apache2-foreground
+exec apachectl -D FOREGROUND

@@ -65,11 +65,6 @@ fi
 echo "Starting MariaDB..."
 service mariadb start
 
-# Ensure proper ownership of workspace files (useful when host mounts are present)
-chown -R www-data:www-data /var/www/html || true
-# Optionally let vscode user own workspace files if they exist
-chown -R vscode:www-data /var/www/html || true
-
 # Finally, start Apache in the foreground (PID 1)
 echo "Starting Apache (foreground)..."
 service apache2 start

@@ -33,8 +33,8 @@ RUN useradd -m -s /bin/bash vscode && \
 
 # Configure Apache to serve from /workspace
 RUN echo '<VirtualHost *:80>\n\
-    DocumentRoot /workspace\n\
-    <Directory /workspace>\n\
+    DocumentRoot /workspaces\n\
+    <Directory /workspaces>\n\
         Options Indexes FollowSymLinks MultiViews\n\
         AllowOverride All\n\
         Require all granted\n\
@@ -66,4 +66,4 @@ CMD ["/usr/local/bin/start-services.sh"]
 # Expose ports
 EXPOSE 80 3306
 
-WORKDIR /workspace
+WORKDIR /workspaces/

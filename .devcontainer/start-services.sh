@@ -63,7 +63,7 @@ fi
 
 # Start MariaDB in background
 echo "Starting MariaDB..."
-mysqld_safe --datadir=/var/lib/mysql &
+service mysqld start
 
 # Ensure proper ownership of workspace files (useful when host mounts are present)
 chown -R www-data:www-data /var/www/html || true
@@ -72,4 +72,4 @@ chown -R vscode:www-data /var/www/html || true
 
 # Finally, start Apache in the foreground (PID 1)
 echo "Starting Apache (foreground)..."
-exec apachectl -D FOREGROUND
+service apache2 start

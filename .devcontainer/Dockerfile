@@ -19,6 +19,9 @@ RUN apt-get update && apt-get install -y \
     libapache2-mod-php \
     git \
     curl \
+    wget \
+    unzip \
+    tar \
     vim \
     sudo \
     && apt-get clean \

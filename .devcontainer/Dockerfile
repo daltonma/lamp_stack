@@ -69,4 +69,5 @@ CMD ["/usr/local/bin/start-services.sh"]
 # Expose ports
 EXPOSE 80 3306
 
+USER vscode
 WORKDIR /workspaces/
